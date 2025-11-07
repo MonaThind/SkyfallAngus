@@ -18,8 +18,9 @@
     </div>
   </header>
 
-  <!-- Navigation menu with dropdowns -->
+  <!-- Navigation menu with hamburger toggle -->
   <nav id="site-nav">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
     <ul class="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li class="dropdown">
@@ -97,8 +98,13 @@
     <p>Site developed by JIMAJM</p>
   </footer>
 
-  <!-- Dynamic nav positioning script -->
+  <!-- Scripts for dynamic nav and hamburger toggle -->
   <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.nav-menu');
+      menu.classList.toggle('show');
+    }
+
     function positionNav() {
       const header = document.getElementById('site-header');
       const nav = document.getElementById('site-nav');
