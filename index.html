@@ -8,18 +8,18 @@
 </head>
 <body>
   <!-- Header with logo and title -->
-  <header>
+  <header id="site-header">
     <div class="header-container">
       <img src="logo.png" alt="Skyfall Angus Logo" class="logo" />
       <div class="title-block">
         <h1>Skyfall Angus</h1>
-	<p>Premium Angus Genetics | Ethical Farming | Exceptional beef | Australian Excellence</p>
+        <p>Premium Angus Genetics | Ethical Farming | Exceptional beef | Australian Excellence</p>
       </div>
     </div>
   </header>
 
   <!-- Navigation menu with dropdowns -->
-  <nav>
+  <nav id="site-nav">
     <ul class="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li class="dropdown">
@@ -53,9 +53,7 @@
           <li><a href="#">Beef</a></li>
         </ul>
       </li>
-      <li class="dropdown">
-        <li><a href="recipes.html">Our Recipes</a></li>
-      </li>
+      <li><a href="recipes.html">Our Recipes</a></li>
       <li class="dropdown">
         <a href="#">Contact ▾</a>
         <ul class="dropdown-menu">
@@ -79,11 +77,10 @@
   <div class="content">
     <h3>Welcome to Skyfall Angus</h3>
     <p>
-      Nestled in the picturesque outback of New South Wales, established in 2017, Skyfall Angus was founded on a commitment to ethical farming, performance-driven genetic selection, and the pursuit of excellence in Angus cattle 
-Spanning three unique properties; Razorback, Camden, and Goulburn; each benefiting from diverse pastures and climates that help our cattle truly thrive. Each animal at Skyfall Angus is raised with care, integrity, and innovation, ensuring that every customer enjoys the very best Australian beef. We offer select live cattle for sale throughout the year, including quality breeding females and HBR bulls for both commercial producers and stud operations.
-From the heart of Australia, we also supply premium beef directly to consumers, ensuring every animal is nurtured and every customer enjoys only the best that Skyfall Angus has to offer.
-
-
+      Nestled in the picturesque outback of New South Wales, established in 2017, Skyfall Angus was founded on a commitment to ethical farming, performance-driven genetic selection, and the pursuit of excellence in Angus cattle.
+      Spanning three unique properties—Razorback, Camden, and Goulburn—each benefits from diverse pastures and climates that help our cattle truly thrive. Each animal at Skyfall Angus is raised with care, integrity, and innovation, ensuring that every customer enjoys the very best Australian beef.
+      We offer select live cattle for sale throughout the year, including quality breeding females and HBR bulls for both commercial producers and stud operations.
+      From the heart of Australia, we also supply premium beef directly to consumers, ensuring every animal is nurtured and every customer enjoys only the best that Skyfall Angus has to offer.
     </p>
   </div>
 
@@ -99,5 +96,19 @@ From the heart of Australia, we also supply premium beef directly to consumers, 
     <p>&copy; 2025 Skyfall Angus. All rights reserved.</p>
     <p>Site developed by JIMAJM</p>
   </footer>
+
+  <!-- Dynamic nav positioning script -->
+  <script>
+    function positionNav() {
+      const header = document.getElementById('site-header');
+      const nav = document.getElementById('site-nav');
+      if (header && nav) {
+        nav.style.top = header.offsetHeight + 'px';
+      }
+    }
+
+    window.addEventListener('load', positionNav);
+    window.addEventListener('resize', positionNav);
+  </script>
 </body>
 </html>
