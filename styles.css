@@ -119,7 +119,7 @@ nav {
   background: none;
   border: none;
   font-size: 2rem;
-  color: #444;
+  color: #565676;
   cursor: pointer;
   z-index: 1001;
 }
@@ -294,4 +294,5 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 
