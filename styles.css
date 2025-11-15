@@ -183,7 +183,7 @@ nav {
 
 /* ---------- Hero Section ---------- */
 .hero {
-  background-image: url('/background.JPG');
+  background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,6 +426,7 @@ footer a:hover {
     border-top: 1px solid #0a1f44;
   }
 }
+
 
 
 
