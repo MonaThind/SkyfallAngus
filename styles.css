@@ -846,7 +846,6 @@ footer a:hover {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-
 }
 
 /* ================================
@@ -872,13 +871,14 @@ footer a:hover {
 
 .alt-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   display: block;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   object-fit: cover;
 }
+
 
 .alt-text {
   flex: 1;
@@ -917,6 +917,3 @@ footer a:hover {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
 }
-
-
-
