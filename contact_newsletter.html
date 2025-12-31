@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyfall Angus – Newsletter</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* HERO */
+    .newsletter-hero {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .newsletter-hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+      width: 90%;
+    }
+
+    .newsletter-hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter-hero-text p {
+      font-size: 1.2rem;
+    }
+
+    /* PAST NEWSLETTERS GRID */
+    .past-newsletters-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .past-newsletters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .newsletter-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .newsletter-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .newsletter-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .newsletter-card h4 {
+      margin: 1rem;
+      color: #0a1f44;
+    }
+
+    .newsletter-card p {
+      margin: 0 1rem 1.5rem;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="site-header">
+    <div class="header-container">
+      <img src="images/logo.png" alt="Skyfall Angus Logo" class="logo" />
+      <div class="title-block">
+        <h1>Skyfall Angus</h1>
+        <p>Premium Angus Genetics | Ethical Farming | Exceptional Beef | Australian Excellence</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="site-nav">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">About Us ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="ourstory.html">Our Story</a></li>
+          <li><a href="ourphilosophy.html">Philosophy</a></li>
+          <li><a href="ourlocations.html">Locations</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">Our Herd ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="foundation.html">Foundation Females</a></li>
+          <li><a href="herdsires.html">Herd Sires</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">Sustainability ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="pasture.html">Pasture Management</a></li>
+          <li><a href="wateruse.html">Water Use</a></li>
+          <li><a href="carbon.html">Carbon Strategy</a></li>
+          <li><a href="lowstress.html">Low Stress Handling</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">Sales ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="registered.html">Registered Animals</a></li>
+          <li><a href="commercial.html">Commercial Animals</a></li>
+          <li><a href="beef.html">Beef</a></li>
+        </ul>
+      </li>
+
+      <li><a href="recipes.html">Our Recipes</a></li>
+
+      <li class="dropdown">
+        <a href="#">Contact ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="enquiry.html">Enquiry Form</a></li>
+          <li><a href="socialmedia.html">Social Media</a></li>
+          <li><a href="newsletter.html">Newsletter Signup</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- HERO SECTION -->
+  <section class="newsletter-hero">
+    <img src="images/newsletter-hero.jpg" alt="Skyfall Angus Newsletter">
+    <div class="newsletter-hero-text">
+      <h2>Current Newsletter</h2>
+      <p>Stay updated with the latest from Skyfall Angus</p>
+    </div>
+  </section>
+
+  <!-- PAST NEWSLETTERS -->
+  <div class="past-newsletters-wrapper">
+    <h2>Past Newsletters</h2>
+
+    <div class="past-newsletters-grid">
+
+      <!-- CARD 1 -->
+      <a href="#" class="newsletter-card">
+        <img src="placeholder1.jpg" alt="Newsletter January">
+        <h4>January 2025</h4>
+        <p>Seasonal updates, herd performance insights, and our latest sustainability initiatives.</p>
+      </a>
+
+      <!-- CARD 2 -->
+      <a href="#" class="newsletter-card">
+        <img src="placeholder2.jpg" alt="Newsletter December">
+        <h4>December 2024</h4>
+        <p>End‑of‑year reflections, breeding highlights, and festive farm news.</p>
+      </a>
+
+      <!-- CARD 3 -->
+      <a href="#" class="newsletter-card">
+        <img src="placeholder3.jpg" alt="Newsletter November">
+        <h4>November 2024</h4>
+        <p>Pasture growth trends, rainfall updates, and herd health priorities.</p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>📧 <a href="mailto:skyfallangus@gmail.com">skyfallangus@gmail.com</a> | 📞 <a href="call:+61424463475">+61 0424 463 475</a></p>
+    <p>
+      Follow us:
+      <a href="#">Facebook</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="https://www.instagram.com/skyfallangus">Instagram</a>
+    </p>
+    <p>&copy; 2025 Skyfall Angus. All rights reserved.</p>
+    <p>Site developed by JIMAJM Creative</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.nav-menu');
+      menu.classList.toggle('show');
+    }
+
+    function positionNav() {
+      const header = document.getElementById('site-header');
+      const nav = document.getElementById('site-nav');
+      if (header && nav) {
+        nav.style.top = header.offsetHeight + 'px';
+      }
+    }
+
+    window.addEventListener('load', positionNav);
+    window.addEventListener('resize', positionNav);
+  </script>
+
+</body>
+</html>

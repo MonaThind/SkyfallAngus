@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyfall Angus – Newsletter Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Dynamic Includes -->
+  <div id="header-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <!-- Spacer -->
+  <div class="spacer"></div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h2>Newsletter</h2>
+    <p>Viewing selected newsletter</p>
+  </div>
+
+  <!-- PDF Viewer -->
+  <iframe id="pdfFrame" class="pdf-container"></iframe>
+
+  <!-- PDF Loader Script -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get("file");
+
+    if (file) {
+      document.getElementById("pdfFrame").src = "newsletters/" + file;
+    } else {
+      document.getElementById("pdfFrame").outerHTML =
+        "<p style='text-align:center;margin:3rem;'>No newsletter selected.</p>";
+    }
+  </script>
+
+  <!-- Dynamic Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Unified Script Loader -->
+  <script src="scripts.js"></script>
+
+</body>
+</html>
