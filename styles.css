@@ -872,7 +872,7 @@ footer a:hover {
 
 .alt-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
   display: block;
   border-radius: var(--radius-md);
@@ -901,4 +901,5 @@ footer a:hover {
     flex-direction: column;
   }
 }
+
 
